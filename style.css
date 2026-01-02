@@ -1,0 +1,120 @@
+/* 全站基本設定 */
+body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  background-color: #fff6f8;
+  color: #444;
+}
+
+/* 導覽列 */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffb6c1;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 區塊 */
+section {
+  padding: 130px 30px;
+  min-height: 100vh;
+}
+
+/* 標題 */
+h1 {
+  font-size: 36px;
+  color: #ff6f91;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #ff6f91;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 0;
+  color: #ff8fab;
+}
+
+/* 貓咪介紹卡片 */
+.cat-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.cat-item img {
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* 貓咪文字 */
+.cat-text p {
+  line-height: 1.8;
+}
+
+/* 清單樣式 */
+ul, ol {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* 表格 */
+table {
+  width: 85%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+th {
+  background-color: #ffb6c1;
+  color: #fff;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .cat-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cat-item img {
+    width: 80%;
+  }
+}
