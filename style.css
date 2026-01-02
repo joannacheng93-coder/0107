@@ -118,3 +118,7 @@ td {
     width: 80%;
   }
 }
+
+.center-text {
+  text-align: center;
+}
